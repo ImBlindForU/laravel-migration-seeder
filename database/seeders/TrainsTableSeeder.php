@@ -23,10 +23,11 @@ class TrainsTableSeeder extends Seeder
             $newTrain->orario_di_partenza = $faker->date('2022_12_d');
             $newTrain->orario_di_arrivo = $faker->date('2022_12_d');
             $newTrain->codice_treno = $faker->numberBetween(1, 9999);
-            $newTrain->numbero_di_carrozze = $faker->numberBetween(1, 50);
+            $newTrain->numero_di_carrozze = $faker->numberBetween(1, 50);
             $newTrain->in_orario = $faker->numberBetween(0, 1);
             $newTrain->cancellato = $faker->numberBetween(0, 1);
-            $newTrain->save();
+            dd($newTrain);
+            // $newTrain->save();
         }
     }
 }
