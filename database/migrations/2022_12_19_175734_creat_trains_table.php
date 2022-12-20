@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('azienda' ,50);
             $table->string('stazione di partenza', 50);
-            $table->string('stazione di arrivo', 50);
+            $table->string('stazione di arrivo',50);
             $table->dateTime('orario di partenza');
             $table->dateTime('orario di arrivo');
             $table->smallInteger('codice treno');
